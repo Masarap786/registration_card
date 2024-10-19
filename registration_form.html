@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment1</title>
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <script src="./js/bootstrap.bundle.js"></script>
+    <style>
+        body {
+            background-color: teal;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        .form-container {
+            background-color: black;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 100px 100px 100px rgba(10, 10, 10, 1.5);
+            width: 800px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container border-0 shadow-lg">
+        <h2 class="text-center mb-4">Registration Form</h2>
+        <form>
+            <div class="row mb-3">
+                <div class="col">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+                </div>
+                <div class="col">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                </div>
+            </div>
+            <div class ="row mb-3">
+            <div class = "col">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="col">
+                <label for="phoneNumber" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter your phone number" >
+            </div>  
+        </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password" >
+                </div>
+                <div class="col">
+                    <label for="confirmPassword" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm password" >
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Gender</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="other" value="other">
+                    <label class="form-check-label" for="other">Other</label>
+                </div>
+            </div>
+            <div class="d-flex justify-content-start mt-4">
+                <button type="button" class="btn btn-danger me-3">Cancel</button>
+                <button type="submit" class="btn btn-dark bg-dark bg-gradient">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
